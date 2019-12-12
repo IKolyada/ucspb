@@ -1,0 +1,26 @@
+@import "_fonts.scss";
+$dark-grey: #303133;
+$light-grey: rgba(48,49,51,.5);
+
+
+
+ul.menu, li.menu__item {
+     display: block;
+     padding: 0;
+     margin: 0;
+}
+
+li.menu__item {
+    padding-right: 20px;
+    a{
+        color: $dark-grey;
+    }  
+}
+
+.heading-1 {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: Montserrat, Helvetica, sans-serif;
+}
