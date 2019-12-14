@@ -1,35 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
+
     <title>Юридический центр "Петербург"</title>
 </head>
+
 <body>
-    <header class="menu-top">
+    <header class="mt-3">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <nav>
                         <ul class="menu d-flex justify-content-center">
-                            <li class="menu__item heading-1"><a href="#">О компании</a></li>
-                            <li class="menu__item heading-1"><a href="#">Преимущества</a></li>
-                            <li class="menu__item heading-1"><a href="#">Стоимость</a></li>
-                            <li class="menu__item heading-1"><a href="#">Акции</a></li>
+                            <li class="menu__item heading-1 pr-4"><a href="#">О компании</a></li>
+                            <li class="menu__item heading-1 pr-4"><a href="#">Преимущества</a></li>
+                            <li class="menu__item heading-1 pr-4"><a href="#">Стоимость</a></li>
+                            <li class="menu__item heading-1 pr-4"><a href="#">Акции</a></li>
                             <li class="menu__item heading-1"><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
-                </div>
+                    <p class="menu__logo d-flex justify-content-center mt-3">Юридический центр «Петербург»</p>
+
+                    
+                    <nav class="navbar d-flex justify-content-center">
+                        <ul class="menu nav d-flex">
+                            <li class="menu__item heading-1 nav-item dropdown"><a class="nav-link dropdown-toggle"
+                                data-toggle="dropdown" href="#" id="navbarDropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">юридические услуги</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                              <li>  <a class="dropdown-item" href="#">Юридические консультации</a></li>
+                             <li>   <a class="dropdown-item" href="#">Подготовка документов</a></li>
+                              <li>  <a class="dropdown-item" href="#">Досудебное урегулирование споров</a></li>
+                              <li>  <a class="dropdown-item" href="#">Арбитражный процесс </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                           
+                            <li class="menu__item heading-1 nav-item dropdown"><a class="nav-link dropdown-toggle"
+                                    data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                    aria-expanded="false">Бухгалтерские услуги</a>
+                                <div class="dropdown-menu">
+                                   <ul> 
+                                    <li><a class="dropdown-item" href="#">Ведение учета</a></li>
+                                 <li>   <a class="dropdown-item" href="#">Консультация бухгалтера</a></li>
+                                 <li>   <a class="dropdown-item" href="#">Бухгалтерское обслуживание</a></li>
+                                   </ul>
+                                </div>
+                            </li>
+                            <li class="menu__item heading-1 nav-item dropdown"><a class="nav-link dropdown-toggle"
+                                    data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                    aria-expanded="false">Регистрационные действия</a>
+                                <div class="dropdown-menu">
+                                   <ul>
+                                    <li> <a class="dropdown-item" href="#">Открытие бизнеса (ООО, ИП)</a></li>
+                                 <li>   <a class="dropdown-item" href="#">Внесение изменений в Устав, ЕГРЮЛ</a></li>
+                                 <li>   <a class="dropdown-item" href="#">Ликвидация (ООО, ИП)</a></li>
+                                   </ul>
+                                </div>
+                            </li>
+                            <li class="menu__item heading-1 nav-item dropdown"><a class="nav-link dropdown-toggle"
+                                    data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                    aria-expanded="false">Оценка условий труда</a>
+                                <div class="dropdown-menu">
+                                 <ul>  <li> <a class="dropdown-item" href="#">Для всех рабочих мест<br> <sub>C 1 января 2019 г., на основании ст. 212 ТК РФ - обязательна. Мы оказываем полный комплекс услуг под «ключ».</sub></a>
+                                 </li></ul>
+                                    
+                                </div>
+                            </li>
+
+                        </ul>
+                        
+                        </nav>
+                        
             </div>
 
         </div>
-    </header>
 
+        
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h1 class="mt-5 mb-2">КОМПЛЕКС<br> БУХГАЛТЕРСКИХ И ЮРИДИЧЕСКИХ УСЛУГ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+                    <img class="hero__blueline" src="/img/blue-line.png" alt="">
+                    <button class="button btn_orderbig shadow-lg mt-5 mb-5">заказать сейчас</button>
+                    <h2 class="hero__h2 mb-5">ВАМИ ЗАНИМАЕТСЯ КОМАНДА ПРОФЕССИОНАЛОВ!<br>
+                        ООО ЮРИДИЧЕСКИЙ ЦЕНТР «ПЕТЕРБУРГ»</h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

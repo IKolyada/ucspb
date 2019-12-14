@@ -1,26 +1,161 @@
-@import "_fonts.scss";
-$dark-grey: #303133;
-$light-grey: rgba(48,49,51,.5);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900&display=swap&subset=cyrillic-ext');;
+@import url('https://fonts.googleapis.com/css?family=Marck+Script&display=swap&subset=cyrillic');
 
+$light-grey: rgba(48, 49, 51, .5);
+$dark-grey: rgb(48, 49, 51);
+$blue: #004a79;
+$text-fs: 15px;
 
-
-ul.menu, li.menu__item {
-     display: block;
-     padding: 0;
-     margin: 0;
+html {
+    font-size: $text-fs;
 }
 
-li.menu__item {
-    padding-right: 20px;
-    a{
-        color: $dark-grey;
-    }  
+h1 {
+    font-size: 50px;
+    font-weight: 700;
 }
 
-.heading-1 {
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 1px;
+h2 {
     font-weight: 600;
-    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 40px;
 }
+
+.heading-1, h1, button, h2, h3 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+    ul.menu,
+    li.menu__item {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    li.menu__item {
+            a {
+            color: $dark-grey;
+            text-decoration: none;
+
+            &:hover {
+                color: $light-grey;
+            }
+        }
+    }
+
+    button {
+        border-radius: 5px;
+        padding: 0;
+        border: none;
+        cursor: pointer; 
+    }
+
+    button:active, button:focus {
+        outline: none;
+      }
+      button::-moz-focus-inner {
+        border: 0;
+      }
+
+    .heading-1, button {
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    .menu__logo {
+        color: $dark-grey;
+        font-family: 'Marck Script', cursive;
+        font-weight: 600;
+        font-size: 40px;
+        display: block;
+        white-space: nowrap;
+    }
+
+    nav.navbar .dropdown:hover > .dropdown-menu {
+        display: block; 
+       }
+
+  .dropdown-menu {
+      
+      margin: 0;
+      margin-left: 15px;
+      padding: 10px;
+      padding-left: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: none;
+      letter-spacing: 0px;
+      font-size: $text-fs;
+        ul {
+            padding: 0;
+            li {
+                list-style-type: disc;
+                a {
+                    padding: 0;
+                    sub {
+                        color: $light-grey;
+                        line-height: 10px;
+                    }
+                }
+            }
+        }
+        
+  }
+  .navbar {
+      padding: 0;
+  }
+
+  .dropdown-item {
+    white-space: normal;
+  }
+
+  /*hero*/
+  .hero {
+      width: 100%;
+      height: auto;
+      background-image: url(/img/bglaw.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0 100%; 
+      text-align: center;
+      h1 {
+        color: black;
+      }
+      h2 {
+          display: block;
+          background-color: $blue;
+          color: white;
+          padding: 44px;
+          border-radius: 10px;
+          -webkit-box-shadow: 0px 30px 60px -30px rgba(0, 0, 0, 0.45);
+          -moz-box-shadow: 0px 30px 60px -30px rgba(0, 0, 0, 0.45);
+         box-shadow: 0px 30px 60px -30px rgba(0, 0, 0, 0.45);
+      }
+      button {
+        background-color: rgb(251, 251, 251);
+        color: $dark-grey;
+        &:hover {
+           background-color: #f2f2f2;
+        }
+      }
+  }
+
+  .hero__blueline {
+      max-width: 520px;
+      display: block;
+      margin: 0 auto;
+  }
+
+  .btn_orderbig {
+    padding: 14px 40px;
+    -webkit-box-shadow: 0 8px 30px -6px rgba(0, 0, 0, 0.6) !important;
+    -moz-box-shadow: 0 8px 30px -6px rgba(0, 0, 0, 0.6) !important;
+    box-shadow: 0 8px 30px -6px rgba(0, 0, 0, 0.6) !important;
+  }
+
+
+  
+  
+
