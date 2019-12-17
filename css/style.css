@@ -118,15 +118,13 @@ nav.navbar .dropdown:hover > .dropdown-menu {
 .hero {
   width: 100%;
   height: auto;
-  background: url(/img/bglaw.jpg) 50% 80% no-repeat;
   background-size: 100% 100%;
   text-align: center;
   background-color: #f7f7f7;
+  position: relative;
   transition: background-size 8s ease-in-out;
   -moz-transition: background-size 8s ease-in-out;
   -web-kit-transition: background-size 8s ease-in-out; }
-  .hero:hover {
-    background-size: 125% 125%; }
   .hero h1 {
     color: black; }
   .hero h2 {
@@ -143,6 +141,22 @@ nav.navbar .dropdown:hover > .dropdown-menu {
     color: #303133; }
     .hero button:hover {
       background-color: #f2f2f2; }
+
+@keyframes zoomin {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.2); } }
+
+.hero__img {
+  animation-name: zoomin;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  height: 674px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto; }
 
 .hero__blueline {
   width: 80%;
