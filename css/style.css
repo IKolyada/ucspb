@@ -61,7 +61,8 @@ button {
   border-radius: 5px;
   padding: 0;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 0.3s; }
 
 button:active, button:focus {
   outline: none; }
@@ -84,6 +85,9 @@ button::-moz-focus-inner {
 
 nav.navbar .dropdown:hover > .dropdown-menu {
   display: block; }
+
+.mobile-menu {
+  display: none; }
 
 .dropdown-menu {
   margin: 0;
@@ -115,9 +119,14 @@ nav.navbar .dropdown:hover > .dropdown-menu {
   width: 100%;
   height: auto;
   background: url(/img/bglaw.jpg) 50% 80% no-repeat;
-  background-size: 100% contain;
+  background-size: 100% 100%;
   text-align: center;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  transition: background-size 8s ease-in-out;
+  -moz-transition: background-size 8s ease-in-out;
+  -web-kit-transition: background-size 8s ease-in-out; }
+  .hero:hover {
+    background-size: 125% 125%; }
   .hero h1 {
     color: black; }
   .hero h2 {
@@ -136,6 +145,7 @@ nav.navbar .dropdown:hover > .dropdown-menu {
       background-color: #f2f2f2; }
 
 .hero__blueline {
+  width: 80%;
   max-width: 520px;
   display: block;
   margin: 0 auto; }
@@ -182,7 +192,10 @@ nav.navbar .dropdown:hover > .dropdown-menu {
   width: 250px;
   max-width: 40%;
   flex: 0 0 40%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-right: 3rem; }
   .blue-block h3 {
     height: 80px;
     margin: 10px; }
@@ -206,6 +219,40 @@ section {
 .grey-container {
   padding-top: 150px; }
 
+.callback-form {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1500;
+  top: 0;
+  background-color: #004a79; }
+  .callback-form input, .callback-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    margin-top: 30px; }
+    .callback-form input:focus, .callback-form textarea:focus {
+      outline: none; }
+  .callback-form textarea {
+    margin-bottom: 30px; }
+  .callback-form button {
+    padding: 12px 48px;
+    word-wrap: normal;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s; }
+    .callback-form button:hover {
+      background-color: #f2f2f2; }
+  .callback-form .close {
+    color: white;
+    margin-top: 30px;
+    cursor: pointer; }
+  .callback-form .fz152 label {
+    color: white; }
+
 footer {
   width: 100%;
   color: white;
@@ -217,25 +264,83 @@ footer {
   header {
     padding-top: 0; }
   .overlay {
+    display: none;
     position: fixed;
     z-index: 100;
     background: #004a79;
     margin-top: 60px;
     width: 100%;
     height: 100%;
-    opacity: 80%; }
+    opacity: 100%; }
+  .visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0; }
+  .hamburger {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    position: relative; }
+  .hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #303133;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; }
+  .bar1 {
+    top: 0; }
+  .bar2,
+  .bar3 {
+    top: 13.5px; }
+  .bar3 {
+    right: 0; }
+  .bar4 {
+    bottom: 0; }
+  .hamburger3 .bar1 {
+    transform-origin: 5%; }
+  .hamburger3 .bar4 {
+    transform-origin: 5%; }
+  .checkbox3:checked + label > .hamburger3 > .bar1 {
+    transform: rotate(45deg);
+    height: 3px;
+    width: 42px; }
+  .checkbox3:checked + label > .hamburger3 > .bar3 {
+    transform: rotate(45deg);
+    height: 3px;
+    background-color: transparent; }
+  .checkbox3:checked + label > .hamburger3 > .bar2 {
+    transform: rotate(-45deg);
+    height: 3px;
+    background-color: transparent; }
+  .checkbox3:checked + label > .hamburger3 > .bar4 {
+    transform: rotate(-45deg);
+    height: 3px;
+    width: 42px; }
   .white-block {
     flex: 0 0 48%;
     max-width: 48%;
     margin-top: 30px; }
   .hero {
-    background-position: 20% 50%; }
+    background-position: 20% 50%;
+    margin-top: 70px; }
   .grey-container {
     padding-top: 180px; }
   .blue-block {
     max-width: 45%;
     flex: 0 0 45%;
-    margin-top: 30px; }
+    margin-top: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 2rem; }
   .topmenu {
     display: flex;
     justify-content: center;
@@ -243,7 +348,11 @@ footer {
     line-height: 35px;
     padding-top: 20px; }
   .mobile-logo {
-    display: block; }
+    display: block;
+    background-color: white; }
+    .mobile-logo .menuburger {
+      position: absolute;
+      right: 15px; }
   .logo {
     display: none; }
   .dropmenu {
@@ -254,7 +363,12 @@ footer {
   .topmenu, .dropmenu {
     text-align: center; }
   .dropdown-menu {
-    background-color: transparent; }
+    background-color: transparent;
+    position: relative;
+    border: none;
+    margin-left: 45px; }
+    .dropdown-menu ul {
+      color: white; }
   ul.menu {
     flex-flow: column; }
     ul.menu li.menu__item a {
@@ -265,9 +379,30 @@ footer {
     ul.menu li.menu__item a.dropdown-item {
       white-space: normal; }
       ul.menu li.menu__item a.dropdown-item:hover {
-        color: #303133; } }
+        color: white; }
+      ul.menu li.menu__item a.dropdown-item sub {
+        color: white; }
+  .fz152 {
+    margin-bottom: 30px; } }
 
 @media (max-width: 576px) {
+  h1 {
+    font-size: 1.8rem;
+    line-height: 2.5rem; }
+  h2 {
+    font-size: 1.3rem;
+    line-height: 2.2rem; }
+  .mobile-logo .menuburger {
+    position: absolute;
+    right: 5px; }
+  .menu__logo {
+    font-size: 1.2rem; }
+  .overlay {
+    margin-top: 50px; }
+  .hero {
+    margin-top: 58px; }
+  .grey-bg {
+    padding-top: 75px; }
   .white-block {
     padding: 20px;
     width: 250px;
@@ -277,9 +412,17 @@ footer {
     margin-right: auto;
     margin-left: auto; }
     .white-block h3 {
-      height: 80px;
-      margin: 10px; }
+      height: unset;
+      margin: 10px;
+      margin-left: 0; }
   .grey-container {
-    padding-top: 215px; } }
+    padding-top: 180px; }
+  .blue-block {
+    max-width: 75%;
+    flex: 0 0 75%;
+    margin-top: 30px;
+    margin-right: 0; }
+    .blue-block h3 {
+      height: unset; } }
 
 /*# sourceMappingURL=style.css.map */

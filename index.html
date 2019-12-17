@@ -14,13 +14,24 @@
 
 <body>
     <header >
-        <div class="container-fluid border-bottom mobile-logo" >
+        
+        <div class="container-fluid border-bottom mobile-logo fixed-top" >
             <div class="row">
                 <div class="col-xl-12">
                     
                     <p class="menu__logo mt-3">Юридический центр «Петербург»</p>
                         
             </div>
+
+            <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden mobile-menu menuToggle">
+        <label for="checkbox3" class="menuburger">
+            <div class="hamburger hamburger3">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+            </div>
+        </label>
 
         </div>
     </div>
@@ -121,7 +132,7 @@
                 <div class="col-xl-12 ">
                     <h1 class="mt-5 mb-2">КОМПЛЕКС<br> БУХГАЛТЕРСКИХ И ЮРИДИЧЕСКИХ УСЛУГ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                     <img class="hero__blueline" src="/img/blue-line.png" alt="">
-                    <button class="button btn_orderbig shadow-lg mt-5 mb-5">заказать сейчас</button>
+                    <button class="button btn_orderbig shadow-lg mt-5 mb-5 show_popup">заказать сейчас</button>
                     <h2 class="hero__h2 mb-5 mt-5">ВАМИ ЗАНИМАЕТСЯ КОМАНДА ПРОФЕССИОНАЛОВ!<br>
                         ООО ЮРИДИЧЕСКИЙ ЦЕНТР «ПЕТЕРБУРГ»</h2>
 
@@ -195,7 +206,7 @@
  </div>
  <div class="container mt-5 pb-5 d-flex justify-content-center">
     <div class="row">
-        <div class="col-xl-12 ">
+        <div class="col-xl-12 text-center">
             <h4>
             Вашу компанию ведет живой специалист, а не виртуальный сервис!</h4>
         </div>
@@ -209,8 +220,8 @@
     </div>
     
     <div class="container grey-container">
- <div class="row justify-content-center pr-5 pl-5">
-     <div class="col-xl-6 blue-block shadow-lg mr-5">
+ <div class="row justify-content-center ">
+     <div class="col-xl-6 blue-block shadow-lg ">
         
         <i class="fas fa-trophy"></i>
          <h3>Юридические услуги</h3>
@@ -235,7 +246,7 @@
 
     </div>
     
-    <div class="col-xl-6 blue-block shadow-lg mr-5 mt-5">
+    <div class="col-xl-6 blue-block shadow-lg ">
         <i class="fas fa-coins"></i>
        <h3>Регистрационные услуги</h3>
        <ul>
@@ -246,7 +257,7 @@
     </div>
 
 
-    <div class="col-xl-6 blue-block shadow-lg mt-5">
+    <div class="col-xl-6 blue-block shadow-lg ">
         <i class="fas fa-trophy"></i>
        
          <h3>Специальная оценка условий труда</h3>
@@ -259,6 +270,41 @@
  </div>
  </div>
 </section>
+<div class="callback-form" id="callback-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 text-right close">X</div>
+        </div>
+    </div>
+    
+    <form action="">
+    <div class="container">
+        <div class="row justify-content-center form">
+            
+            <div class="col-xl-3"> <input type="text" placeholder="Ваше имя"></div>
+            <div class="col-xl-3"><input type="email" placeholder="E-mail*"></div>
+            <div class="col-xl-3"><input type="tel" placeholder="Телефон*"></div>               
+            <div class="col-xl-9"><textarea name="" id="" cols="30" rows="5" placeholder="Вопрос:"></textarea></div> 
+            <div class="col-xl-6 fz152 ">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="agree">
+                    <label class="custom-control-label" for="agree">Нажимая кнопку «Отправить заявку», я даю свое согласие на обработку моих 
+                        персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях 
+                        и для целей, определенных в Согласии на обработку персональных данных.</label>
+                  </div>
+               
+                  
+                
+            </div>   
+            <div class="col-xl-3 "><button type="submit">Отправить&nbsp;заявку</button></div>  
+                
+        </form>      
+            
+        </div>
+    </div>
+
+
+</div>
 <footer>
     © 2019 Юридический центр «Петербург» All rights reserved
     </footer>
@@ -266,6 +312,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
