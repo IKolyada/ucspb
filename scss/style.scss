@@ -154,23 +154,50 @@ li.menu__item {
      opacity: 100;     
  } 
 
+.kenburns {
+    overflow: auto;
+    -webkit-animation: kenburns 15s ease alternate forwards;
+    -moz-animation: kenburns 15s ease alternate forwards;
+    -o-animation: kenburns 15s ease alternate forwards;
+    animation: kenburns 15s ease alternate forwards;
+}
 
+@-webkit-keyframes kenburns {
+    100% {
+      -webkit-transform: scale(1.15);
+    }
+  }
+  @-moz-keyframes kenburns {
+    100% {
+      -moz-transform: scale(1.15);
+    }
+  }
+  @-o-keyframes kenburns {
+    100% {
+      -o-transform: scale(1.15);
+    }}
+    @keyframes kenburns {
+        100% {
+          transform: scale(1.15);
+        }
+      }
   /*hero*/
   .hero {
       width: 100%;
-      height: auto;
-      // background: url('../img/bglaw.jpg') 50% 80% no-repeat;
-      background-size: 100% 100%;       
+      height: auto;           
       text-align: center;
       background-color: $dirty-white;
       position: relative;
-      transition: background-size 8s ease-in-out;
-      -moz-transition: background-size 8s ease-in-out;
-      -web-kit-transition: background-size 8s ease-in-out; 
-      
-      // &:hover {
-      //     background-size: 125% 125%;
-      // }  
+      overflow: hidden;
+       
+       .bg_zoom {
+        animation: kenburns 15s ease alternate forwards;
+        background-image: url('/img/bglaw.jpg');
+        background-position: center bottom;
+        background-repeat:  no-repeat;
+        background-size: cover;  
+     
+       }
       
       h1 {
         color: black;
@@ -195,25 +222,16 @@ li.menu__item {
       }
   }
 
-  @keyframes zoomin {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(1.2);
-    }
-  }
-
+ 
   .hero__img {
-    animation-name: zoomin;
+    
     animation-duration: 10s;
     animation-fill-mode: forwards;
     height: 674px;
     position: absolute;
     top: 0;
     left: 0;
-    width: auto;
+    width: 100%;
   }
 
   .hero__blueline {
@@ -350,9 +368,7 @@ li.menu__item {
         
     
     }
-    .form {
-        
-    }
+    
     .fz152 {
         label {
             color: white;
