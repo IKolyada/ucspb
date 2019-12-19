@@ -410,17 +410,17 @@ footer {
     font-weight: 600;
     text-align: center;
     padding: 15px;
-    line-height: 2;
+    line-height: 1;
     vertical-align: middle;
     right: 0;
     top: unset;
-    bottom: 0;
+    bottom: 50px;
     z-index: 5;
     animation-name: none;
     transition: none; }
     div.contacts span {
       vertical-align: middle;
-      line-height: 1.9; }
+      line-height: 1.2; }
       div.contacts span a {
         color: #004a79;
         padding-bottom: 15px;
