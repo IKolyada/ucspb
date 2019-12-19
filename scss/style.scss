@@ -154,6 +154,46 @@ li.menu__item {
      opacity: 100;     
  } 
 
+    @keyframes contacts {
+        from {
+            top: -200px; 
+          }
+        to {
+            top: 0;
+          }
+      } 
+ div.contacts {
+    position: absolute;
+    background: $blue;
+    width: auto;
+    height: auto;
+    color: white;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    line-height: 2;
+    vertical-align: middle;
+    right: 10%;
+    top: 0;
+    z-index: 5;
+    animation-name: contacts;
+    animation-duration: 1s;
+   transition: all .5s ease;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.9;
+        a {
+            color: white;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+        
+    }
+    
+}
+
 .kenburns {
     overflow: auto;
     -webkit-animation: kenburns 15s ease alternate forwards;
@@ -192,15 +232,12 @@ li.menu__item {
        
        .bg_zoom {
         animation: kenburns 15s ease alternate forwards;
-        background-image: url('/img/bglaw.jpg');
-        background-position: center bottom;
-        background-repeat:  no-repeat;
-        background-size: cover;  
-     
        }
       
       h1 {
         color: black;
+        margin-top: 150px;
+        margin-bottom: 30px;
       }
       
       h2 {
@@ -224,14 +261,11 @@ li.menu__item {
 
  
   .hero__img {
-    
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
-    height: 674px;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 0; 
+    width: 100%;  
+    object-fit: cover;
   }
 
   .hero__blueline {
@@ -389,9 +423,22 @@ footer {
 @media (max-width: 768px) { 
 
     header {
-        padding-top: 0;
+        padding-top: 0;     
     }
-
+    .hero__img {
+        top: 0;
+        left: 10px;          
+        object-fit: cover;
+        height: 100%;
+        
+        }
+    .hero {
+        h1 {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            
+        }
+    }
     .overlay {
     display:none;
     position: fixed;
@@ -471,7 +518,46 @@ footer {
         height: 3px;
         width: 42px;
     }
+    @keyframes contacts {
+        from {
+            bottom: -200px; 
+          }
+        to {
+            bottom: 0;
+          }
+      } 
+ div.contacts {
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: auto;
+    color: $blue;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    line-height: 2;
+    vertical-align: middle;
+    right: 0;
+    top: unset;
+    bottom: 0;
+    z-index: 5;
+    animation-name: none;
+   
+   transition: none;
+    span {
+        
+        vertical-align: middle;
+        line-height: 1.9;
+        a {
+            color: $blue;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+        
+    }
     
+}
 
     .white-block {      
         flex: 0 0 48%;
@@ -511,13 +597,14 @@ footer {
         }
         
     }
-
+   
     .logo {
         display: none;
        
     }
     .dropmenu {
         top: 295px;
+       
     }
     .menu__logo {
         font-size: 25px;

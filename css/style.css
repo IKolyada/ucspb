@@ -114,6 +114,39 @@ nav.navbar .dropdown:hover > .dropdown-menu {
 .overlay {
   opacity: 100; }
 
+@keyframes contacts {
+  from {
+    top: -200px; }
+  to {
+    top: 0; } }
+
+div.contacts {
+  position: absolute;
+  background: #004a79;
+  width: auto;
+  height: auto;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px;
+  line-height: 2;
+  vertical-align: middle;
+  right: 10%;
+  top: 0;
+  z-index: 5;
+  animation-name: contacts;
+  animation-duration: 1s;
+  transition: all .5s ease; }
+  div.contacts span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.9; }
+    div.contacts span a {
+      color: white;
+      padding-bottom: 15px;
+      display: inline-block; }
+
 .kenburns {
   overflow: auto;
   -webkit-animation: kenburns 15s ease alternate forwards;
@@ -146,13 +179,11 @@ nav.navbar .dropdown:hover > .dropdown-menu {
   position: relative;
   overflow: hidden; }
   .hero .bg_zoom {
-    animation: kenburns 15s ease alternate forwards;
-    background-image: url("/img/bglaw.jpg");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover; }
+    animation: kenburns 15s ease alternate forwards; }
   .hero h1 {
-    color: black; }
+    color: black;
+    margin-top: 150px;
+    margin-bottom: 30px; }
   .hero h2 {
     display: block;
     background-color: #004a79;
@@ -169,13 +200,11 @@ nav.navbar .dropdown:hover > .dropdown-menu {
       background-color: #f2f2f2; }
 
 .hero__img {
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
-  height: 674px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  object-fit: cover; }
 
 .hero__blueline {
   width: 80%;
@@ -296,6 +325,14 @@ footer {
 @media (max-width: 768px) {
   header {
     padding-top: 0; }
+  .hero__img {
+    top: 0;
+    left: 10px;
+    object-fit: cover;
+    height: 100%; }
+  .hero h1 {
+    margin-top: 50px;
+    margin-bottom: 30px; }
   .overlay {
     display: none;
     position: fixed;
@@ -358,6 +395,36 @@ footer {
     transform: rotate(-45deg);
     height: 3px;
     width: 42px; }
+  @keyframes contacts {
+    from {
+      bottom: -200px; }
+    to {
+      bottom: 0; } }
+  div.contacts {
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: auto;
+    color: #004a79;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    line-height: 2;
+    vertical-align: middle;
+    right: 0;
+    top: unset;
+    bottom: 0;
+    z-index: 5;
+    animation-name: none;
+    transition: none; }
+    div.contacts span {
+      vertical-align: middle;
+      line-height: 1.9; }
+      div.contacts span a {
+        color: #004a79;
+        padding-bottom: 15px;
+        display: inline-block; }
   .white-block {
     flex: 0 0 48%;
     max-width: 48%;
