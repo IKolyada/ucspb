@@ -26,7 +26,7 @@ $(function () {
   var $topMenu = $('.topmenu');
   var isTransitioning;
   $(window).on('scroll', function (e) {
-    if (window.matchMedia('(min-width: 768px)').matches) {
+    if (window.matchMedia('(min-width: 1020px)').matches) {
       if (window.scrollY >= 145) {
         if (!isTransitioning && !$topMenu.hasClass('fixed')) {
           isTransitioning = true;

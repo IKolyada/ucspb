@@ -158,7 +158,7 @@ nav.navbar .dropdown:hover > .dropdown-menu {
 .navbar {
   padding: 0; }
 
-@media (min-width: 768px) {
+@media (min-width: 1020px) {
   .topmenu {
     background-color: white;
     position: absolute; }

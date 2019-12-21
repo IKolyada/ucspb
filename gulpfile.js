@@ -21,7 +21,8 @@ gulp.task('watch', function () {
   browserSync.init({
     server: {
       baseDir: './'
-    }
+    },
+    browser: 'google chrome'
   });
   gulp.watch('./scss/**/*.scss', gulp.series('sass-compile'));
 
