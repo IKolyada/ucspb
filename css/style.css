@@ -374,6 +374,8 @@ footer {
     top: 100px;
     line-height: 35px;
     padding-top: 60px; }
+  .fixed-top {
+    position: unset; }
   .mobile-logo {
     display: block;
     background-color: white; }
