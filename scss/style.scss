@@ -561,7 +561,7 @@ footer {
 
     .dropmenu {
         top: 295px;
-
+        padding-bottom: 99px;
     }
 
     .menu__logo {
@@ -622,10 +622,8 @@ footer {
 
     .hero {
         background-position: 20% 50%;
-        margin-top: 70px;
 
         h1 {
-            margin-top: 50px;
             margin-bottom: 30px;
 
         }
@@ -657,7 +655,7 @@ footer {
   //контакты в мобильном меню
 
     div.contacts {
-        position: absolute;
+        position: fixed;
         background: white;
         width: 100%;
         height: auto;
@@ -807,12 +805,6 @@ footer {
 
     .menu__logo {
         font-size: 1.2rem;
-    }
-
-    
-
-    .hero {
-        margin-top: 58px;
     }
 
     //контент
