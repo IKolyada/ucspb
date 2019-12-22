@@ -3,6 +3,9 @@
 html {
   font-size: 15px; }
 
+body {
+  height: 100%; }
+
 h1 {
   font-size: 50px;
   font-weight: 700;
@@ -23,6 +26,14 @@ h4 {
   font-weight: 300;
   font-size: 20px;
   line-height: 30px; }
+
+.wrap {
+  display: table;
+  height: 100%; }
+
+.content {
+  display: table-row;
+  height: 100%; }
 
 .heading-1,
 h1,
@@ -271,6 +282,16 @@ nav.navbar .dropdown:hover > .dropdown-menu {
   .grey-bg h2 {
     margin: 0 20px; }
 
+.content-block {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  color: #303133;
+  margin-top: 30px; }
+  .content-block h3 {
+    height: 80px;
+    margin: 10px; }
+
 .white-block {
   background-color: white;
   border-radius: 10px;
@@ -360,10 +381,15 @@ nav.navbar .dropdown:hover > .dropdown-menu {
 
 footer {
   width: 100%;
+  height: 80px;
   color: white;
   font-size: 13px;
   background-color: #141618;
   padding: 30px 30px; }
+
+.footer-content {
+  position: absolute;
+  bottom: 0; }
 
 @media (max-width: 768px) {
   header {
