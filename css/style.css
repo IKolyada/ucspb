@@ -304,7 +304,8 @@ nav.navbar .dropdown:hover > .dropdown-menu {
   .white-block i.fa {
     color: #004a79;
     font-size: 50px;
-    margin-left: 5%; }
+    margin-left: 5%;
+    height: 70px; }
 
 .blue-block {
   background-color: #004a79;
@@ -373,7 +374,8 @@ nav.navbar .dropdown:hover > .dropdown-menu {
     margin-top: 30px;
     cursor: pointer; }
   .callback-form .fz152 label {
-    color: white; }
+    color: white;
+    margin-bottom: 30px; }
 
 footer {
   width: 100%;
@@ -443,9 +445,11 @@ footer {
     ul.menu li.menu__item a.dropdown-item {
       white-space: normal; }
       ul.menu li.menu__item a.dropdown-item:hover {
-        color: white; }
+        color: #303133; }
       ul.menu li.menu__item a.dropdown-item sub {
         color: white; }
+        ul.menu li.menu__item a.dropdown-item sub:hover {
+          color: #303133; }
   .hero__img {
     top: 0;
     left: 10px;

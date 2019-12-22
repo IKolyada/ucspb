@@ -429,7 +429,7 @@ nav.navbar .dropdown:hover>.dropdown-menu {
         color: $blue;
         font-size: 50px;
         margin-left: 5%;
-
+        height: 70px;
     }
 
 }
@@ -533,7 +533,7 @@ nav.navbar .dropdown:hover>.dropdown-menu {
     .fz152 {
         label {
             color: white;
-            
+            margin-bottom: 30px;
         }
 
     }
@@ -649,11 +649,14 @@ footer {
                 white-space: normal;
 
                 &:hover {
-                    color: white;
+                    color: $dark-grey;                    
                 }
 
                 sub {
                     color: white;
+                    &:hover {
+                        color: $dark-grey;                    
+                    }
                 }
             }
         }
