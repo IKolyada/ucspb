@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900&display=swap&subset=cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=Marck+Script&display=swap&subset=cyrillic");
 html {
-  font-size: 15px; }
+  font-size: 15px;
+  height: 100%; }
 
 body {
   height: 100%; }
@@ -27,14 +28,6 @@ h4 {
   font-size: 20px;
   line-height: 30px; }
 
-.wrap {
-  display: table;
-  height: 100%; }
-
-.content {
-  display: table-row;
-  height: 100%; }
-
 .heading-1,
 h1,
 button,
@@ -50,6 +43,9 @@ section {
   background-color: #f7f7f7;
   position: relative;
   z-index: 0; }
+
+section.content {
+  background-color: unset; }
 
 button {
   border-radius: 5px;
@@ -285,7 +281,7 @@ nav.navbar .dropdown:hover > .dropdown-menu {
 .content-block {
   background-color: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 8%;
   color: #303133;
   margin-top: 30px; }
   .content-block h3 {
@@ -381,15 +377,26 @@ nav.navbar .dropdown:hover > .dropdown-menu {
 
 footer {
   width: 100%;
-  height: 80px;
   color: white;
   font-size: 13px;
   background-color: #141618;
   padding: 30px 30px; }
 
-.footer-content {
-  position: absolute;
-  bottom: 0; }
+#wrap {
+  min-height: 100%; }
+
+#main {
+  overflow: auto;
+  padding-bottom: 150px;
+  /* this needs to be bigger than footer height*/ }
+
+.footer {
+  position: relative;
+  margin-top: -80px;
+  /* negative value of footer height */
+  height: 80px;
+  clear: both;
+  padding-top: 20px; }
 
 @media (max-width: 768px) {
   header {
@@ -566,7 +573,7 @@ footer {
   .menu__logo {
     font-size: 1.2rem; }
   .grey-bg {
-    padding-top: 75px; }
+    padding-top: 35px; }
   .white-block {
     padding: 20px;
     width: 250px;
@@ -580,13 +587,17 @@ footer {
       margin: 10px;
       margin-left: 0; }
   .grey-container {
-    padding-top: 180px; }
+    padding-top: 120px; }
+  .content-block {
+    margin-top: 0; }
   .blue-block {
     max-width: 75%;
     flex: 0 0 75%;
     margin-top: 30px;
     margin-right: 0; }
     .blue-block h3 {
-      height: unset; } }
+      height: unset; }
+  .grey-container .row .blue-block:first-child {
+    margin-top: -30px; } }
 
 /*# sourceMappingURL=style.css.map */

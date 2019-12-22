@@ -11,6 +11,7 @@ $grey: rgb(221, 221, 221);
 
 html {
     font-size: $text-fs;
+    height: 100%;
 }
 
 body {
@@ -43,16 +44,6 @@ h4 {
     line-height: 30px;
 }
 
-.wrap {
-    display: table;
-	height: 100%;
-}
-
-.content {
-    display: table-row;
-	height: 100%;
-}
-
 .heading-1,
 h1,
 button,
@@ -70,6 +61,10 @@ section {
     background-color: $dirty-white;
     position: relative;
     z-index: 0;
+}
+
+section.content {
+    background-color: unset;
 }
 
 button {
@@ -402,7 +397,7 @@ nav.navbar .dropdown:hover>.dropdown-menu {
 .content-block {
     background-color: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 8%;
     color: $dark-grey;
     
     margin-top: 30px;
@@ -538,17 +533,19 @@ nav.navbar .dropdown:hover>.dropdown-menu {
     .fz152 {
         label {
             color: white;
+            
         }
 
     }
 
 }
 
+
+
 // футер
 
 footer {
     width: 100%;
-    height: 80px;
     color: white;
     font-size: 13px;
     background-color: rgb(20, 22, 24);
@@ -556,10 +553,24 @@ footer {
     
 }
 
-.footer-content {
-    position: absolute;
-    bottom: 0;
-}
+#wrap {
+    min-height: 100%;
+  }
+  
+  #main {
+    overflow:auto;
+    padding-bottom:150px; /* this needs to be bigger than footer height*/
+  }
+  
+  .footer {
+    position: relative;
+    margin-top: -80px; /* negative value of footer height */
+    height: 80px;
+    clear:both;
+    padding-top:20px;
+  } 
+
+
 
 @media (max-width: 768px) {
 
@@ -723,6 +734,8 @@ footer {
         }
     }
 
+    
+
     // бургер-меню
     .hamburger {
         margin: 0 auto;
@@ -812,6 +825,7 @@ footer {
         margin-right: 2rem;
     }
 
+   
     .fz152 {
         margin-bottom: 30px;
     }
@@ -845,7 +859,7 @@ footer {
 
     //контент
     .grey-bg {
-        padding-top: 75px;
+        padding-top: 35px;
     }
 
     .white-block {
@@ -865,7 +879,11 @@ footer {
     }
 
     .grey-container {
-        padding-top: 180px;
+        padding-top: 120px;
+    }
+
+    .content-block {
+        margin-top: 0;
     }
 
     
@@ -878,6 +896,10 @@ footer {
         h3 {
             height: unset;
         }
+    }
+
+    .grey-container .row .blue-block:first-child {
+        margin-top: -30px;
     }
 
 }
