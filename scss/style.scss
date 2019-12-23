@@ -4,7 +4,7 @@
 
 $light-grey: rgba(48, 49, 51, .5);
 $dark-grey: rgb(48, 49, 51);
-$blue: #004a79;
+$blue: rgb(0, 74, 121);
 $text-fs: 15px;
 $dirty-white: rgb(247, 247, 247);
 $grey: rgb(221, 221, 221);
@@ -299,24 +299,24 @@ nav.navbar .dropdown:hover>.dropdown-menu {
 
     @keyframes fadein {
         from {
-            opacity: .5;            
+            opacity: .5;
         }
-    
+
         to {
-            opacity: 1;          
-            
+            opacity: 1;
+
         }
     }
-    
+
     .fadein {
         animation: fadein 1s forwards;
-        
+
     }
 
     h1 {
         color: black;
         margin-top: 150px;
-        margin-bottom: 30px;        
+        margin-bottom: 30px;
     }
 
     h2 {
@@ -350,16 +350,20 @@ nav.navbar .dropdown:hover>.dropdown-menu {
 }
 
 @keyframes slideup {
-    0% {transform: translateY(300%);}
-		
-	100% {transform: translateY(0%);}	
-}
-   
+    0% {
+        transform: translateY(300%);
+    }
 
-.slideup {    
-    animation-name: slideup;	
-	animation-duration: .5s;	
-	animation-iteration-count: 1;		
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+.slideup {
+    animation-name: slideup;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
     animation-delay: .3s;
 }
@@ -399,7 +403,7 @@ nav.navbar .dropdown:hover>.dropdown-menu {
     border-radius: 10px;
     padding: 8%;
     color: $dark-grey;
-    
+
     margin-top: 30px;
 
     h3 {
@@ -487,7 +491,7 @@ nav.navbar .dropdown:hover>.dropdown-menu {
     z-index: 1500;
     top: 0;
     background-color: rgba(0, 74, 121, 1);
-    overflow-y:auto;
+    overflow-y: auto;
 
     input,
     textarea {
@@ -550,25 +554,27 @@ footer {
     font-size: 13px;
     background-color: rgb(20, 22, 24);
     padding: 30px 30px;
-    
+
 }
 
 #wrap {
     min-height: 100%;
-  }
-  
-  #main {
-    overflow:auto;
-    padding-bottom:150px; /* this needs to be bigger than footer height*/
-  }
-  
-  .footer {
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 150px;
+    /* this needs to be bigger than footer height*/
+}
+
+.footer {
     position: relative;
-    margin-top: -80px; /* negative value of footer height */
+    margin-top: -80px;
+    /* negative value of footer height */
     height: 80px;
-    clear:both;
-    padding-top:20px;
-  } 
+    clear: both;
+    padding-top: 20px;
+}
 
 
 
@@ -587,7 +593,7 @@ footer {
     }
 
     .fixed-top {
-      position: unset;
+        position: unset;
     }
 
     .mobile-logo {
@@ -649,13 +655,14 @@ footer {
                 white-space: normal;
 
                 &:hover {
-                    color: $dark-grey;                    
+                    color: $dark-grey;
                 }
 
                 sub {
                     color: white;
+
                     &:hover {
-                        color: $dark-grey;                    
+                        color: $dark-grey;
                     }
                 }
             }
@@ -683,12 +690,12 @@ footer {
         display: none;
         position: fixed;
         z-index: 100;
-        background: $blue;       
+        background: $blue;
         width: 100%;
         height: 100%;
         opacity: 100%;
-        overflow-y:auto;
-        overflow-x:hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .visuallyHidden {
@@ -702,7 +709,7 @@ footer {
         border: 0;
     }
 
-  //контакты в мобильном меню
+    //контакты в мобильном меню
 
     div.contacts {
         position: fixed;
@@ -737,7 +744,7 @@ footer {
         }
     }
 
-    
+
 
     // бургер-меню
     .hamburger {
@@ -828,7 +835,7 @@ footer {
         margin-right: 2rem;
     }
 
-   
+
     .fz152 {
         margin-bottom: 30px;
     }
@@ -889,7 +896,7 @@ footer {
         margin-top: 0;
     }
 
-    
+
     .blue-block {
         max-width: 75%;
         flex: 0 0 75%;
@@ -906,3 +913,44 @@ footer {
     }
 
 }
+
+table.price {
+    color: $dark-grey;
+    font-weight: 400;
+    width: 100%;
+
+    a {
+        color: $dark-grey;
+        font-weight: 500;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    tr {
+        &:nth-child(odd) {
+            background-color: rgba(0, 74, 121, .3);
+
+        }
+    }
+
+    tr {
+        &:nth-child(even) {
+            background-color: rgba(48, 49, 51, .05);
+
+        }
+
+    }
+}
+/*
+.kit {
+    background: white;
+    text-align: center;
+    .kit__head {
+        background: linear-gradient(60deg, $blue 63%, trasparent 63%) 50% 50% / 8em 8em;
+        color:black;
+        padding: 10px;
+    }
+}*/
+

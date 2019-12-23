@@ -604,4 +604,29 @@ footer {
   .grey-container .row .blue-block:first-child {
     margin-top: -30px; } }
 
+table.price {
+  color: #303133;
+  font-weight: 400;
+  width: 100%; }
+  table.price a {
+    color: #303133;
+    font-weight: 500; }
+  table.price td {
+    padding: 10px; }
+  table.price tr:nth-child(odd) {
+    background-color: rgba(0, 74, 121, 0.3); }
+  table.price tr:nth-child(even) {
+    background-color: rgba(48, 49, 51, 0.05); }
+
+/*
+.kit {
+    background: white;
+    text-align: center;
+    .kit__head {
+        background: linear-gradient(60deg, $blue 63%, trasparent 63%) 50% 50% / 8em 8em;
+        color:black;
+        padding: 10px;
+    }
+}*/
+
 /*# sourceMappingURL=style.css.map */
